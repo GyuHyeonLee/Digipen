@@ -6,44 +6,27 @@ Term : Spring 2018
 */
 
 #include "CubeMesh.h"
+const Point CubeMesh::vertices[8] = 
+{
+	Point(1.0f, 1.0f, 1.0f),
+	Point(-1.0f, 1.0f, 1.0f),
+	Point(-1.0f, -1.0f, 1.0f),
+	Point(1.0f, -1.0f, 1.0f),
+	Point(1.0f, 1.0f, -1.0f),
+	Point(-1.0f, 1.0f, -1.0f),
+	Point(-1.0f, -1.0f, -1.0f),
+	Point(1.0f, -1.0f, -1.0f),
+};
 
-CubeMesh::CubeMesh()
-{ 
-	vertices[0] = Point();
-	vertices[1] = Point();
-	vertices[2] = Point();
-	vertices[3] = Point();
-	vertices[4] = Point();
-	vertices[5] = Point();
-	vertices[6] = Point();
-	vertices[7] = Point();
+const CubeMesh::Edge CubeMesh::edges[12] = 
+{
+	CubeMesh::Edge();
+};
 
-	faces[0] = ;
-	faces[1] = ;
-	faces[2] = ;
-	faces[3] = ;
-	faces[4] = ;
-	faces[5] = ;
-	faces[6] = ;
-	faces[7] = ;
-	faces[8] = ;
-	faces[9] = ;
-	faces[10] = ;
-	faces[11] = ;
+const CubeMesh::Face CubeMesh::faces[12] = 
+{
 
-	edges[0] = ;
-	edges[1] = ;
-	edges[2] = ;
-	edges[3] = ;
-	edges[4] = ;
-	edges[5] = ;
-	edges[6] = ;
-	edges[7] = ;
-	edges[8] = ;
-	edges[9] = ;
-	edges[10] = ;
-	edges[11] = ;
-}
+};
 
 int CubeMesh::VertexCount(void)
 {

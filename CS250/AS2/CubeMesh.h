@@ -10,7 +10,6 @@
 class CubeMesh : public Mesh 
 {
   public:
-	CubeMesh();
     int VertexCount(void) override;
     Point GetVertex(int i) override;
     Vector Dimensions(void) override;

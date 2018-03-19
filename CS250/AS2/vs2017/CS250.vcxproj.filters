@@ -11,10 +11,16 @@
     </ClCompile>
     <ClCompile Include="..\CubeMesh.cpp" />
     <ClCompile Include="..\Render.cpp" />
+    <ClCompile Include="..\CubeRenderDemo.cpp" />
+    <ClCompile Include="..\CubeTest.cpp" />
+    <ClCompile Include="..\RenderTest.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\Affine.h">
       <Filter>Affine</Filter>
     </ClInclude>
+    <ClInclude Include="..\CubeMesh.h" />
+    <ClInclude Include="..\Mesh.h" />
+    <ClInclude Include="..\Render.h" />
   </ItemGroup>
 </Project>
