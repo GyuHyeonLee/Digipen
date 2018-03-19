@@ -152,12 +152,12 @@ void Client::draw(double dt) {
 
   // draw a rotating array of cubes
   Affine R = rotate(acos(dot(EZ,rot_axis)),cross(EZ,rot_axis))
-             * rotate(rot_rate*time,EZ);
+             * rotate(rot_rate*(float)time,EZ);
   for (int i=0; i < cube_count; ++i) {
     for (int j=0; j < cube_count; ++j) {
       for (int k=0; k < cube_count; ++k) {
         // modeling transformation
-        Vector offset = rsize * (Vector(i,j,k)
+        Vector offset = rsize * (Vector((float)i,(float)j,(float)k)
                                  - 0.5f*(cube_count-1)*Vector(1,1,1));
         Affine obj2world = translate(center-O) * R * translate(offset)
                            * scale(rot_scale*rsize);
@@ -200,6 +200,8 @@ void Client::resize(int W, int H) {
 /////////////////////////////////////////////////////////////////
 
 int main(int argc, char *argv[]) {
+	argc = 0;
+	argv = 0;
   srand(unsigned(time(0)));
 
   // SDL: initialize and create a window

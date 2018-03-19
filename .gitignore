@@ -1,0 +1,17 @@
+# no .bat files
+*.bat
+*.db
+*.VC.db
+*.suo
+/.vs
+/ipch
+*.ipch
+/Debug
+*.obj
+*.exe
+*.log
+*.ilk
+*.idb
+/CS250.tlog
+*.tlog
+/x64

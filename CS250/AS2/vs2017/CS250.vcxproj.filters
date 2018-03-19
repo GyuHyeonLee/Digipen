@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Affine">
+      <UniqueIdentifier>{6b0e5838-48f8-4ee1-b28a-d27924b1df82}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Affine.cpp">
+      <Filter>Affine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CubeMesh.cpp" />
+    <ClCompile Include="..\Render.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Affine.h">
+      <Filter>Affine</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
