@@ -7,6 +7,7 @@
 /ipch
 *.ipch
 /Debug
+*.exp
 *.obj
 *.exe
 *.log
@@ -15,3 +16,4 @@
 /CS250.tlog
 *.tlog
 /x64
+*.opendb
